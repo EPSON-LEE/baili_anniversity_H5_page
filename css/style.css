@@ -201,6 +201,7 @@ body,html, .swiper-container,.load{
     position: absolute;
     top: 70%;
     left: 40%;
+    z-index: 8;
 }
 
 .first-page #left-cd{
@@ -259,6 +260,35 @@ body,html, .swiper-container,.load{
     to{ transform:rotate(0deg) }
 
 }
+
+.sound-cloud{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.arrow-2{
+    position: absolute;
+    width: 15.625%;
+    z-index: 6;
+    top: 30%;
+    left: 42%;
+     visibility: hidden;
+
+    animation: arrow-2 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes arrow-2 {
+
+    from{ transform:rotate(0deg) }
+    to{ transform:rotate(360deg) }
+
+}
+
 
 /*******************************prize-page***************************************/
 
