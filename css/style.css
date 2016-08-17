@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html, .swiper-container,.load{
+    width: 100%;
+    height: 100%;
+}
+
+#whole{
+    /*visibility: hidden;*/
+}
+
+.load{
+    background-size: 100% 100%;
+    position: relative;
+    background: rgb(236, 120, 142);
+
+    line-height: 300px;
+    font-size: 36px;
+    text-align: center;
+}
+
+#load-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+.load #load-cloud{
+    width: 39.22%;
+    height: 18.13%;
+    position: absolute;
+    left: 30%;
+    margin-top: 30%;
+    top: 30%;
+    z-index: 3;
+
+    animation: cloudFloat 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloudFloat {
+
+    from{ top: 23%; }
+    to { top: 25%; }
+}
+
+.load #static-page{
+    width: 34.38%;
+    height: 33.02%;
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    z-index: 1;
+}
+
+.load #bar{
+    position: absolute;
+    width: 0%;
+    height: 2%;
+    background-color: red;
+    border-radius: 23%;
+    top: 65%;
+    left: 39%;
+
+}
+
+/*******************************first-page***************************************/
+.first-page{
+    background-image: url("../img/first-page/first-page-bg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.first-page #school-flower{
+
+    width: 92.5%;
+    height: 50.31%;
+
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    z-index: 1;
+
+    animation: school-flower 2s;
+    animation-timing-function: linear;;
+}
+
+@keyframes school-flower{
+    from{
+        top: -30%;
+    }
+    to{
+        top: 0%;
+    }
+}
+
+
+.first-page #left-cloud{
+
+    width: 11.25%;
+    height: 3.96%;
+
+    position: absolute;
+    top: 8%;
+    left: 10%;
+
+    animation: left-cloud 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes left-cloud {
+    from{ top: 9%; }
+    to { top: 6%; }
+}
+
+.first-page #ad{
+
+    width: 70.78%;
+    height: 27.08%;
+
+    position: absolute;
+    top: 44%;
+    left: 18%;
+
+    animation: ad 2s;
+    animation-timing-function: linear;
+}
+@keyframes ad {
+    from{ left: 100%; }
+    to { left: 18%; }
+}
+
+
+
+.first-page #static{
+    width: 34.38%;
+    height: 33.02%;
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    z-index: 3;
+}
+
+.first-page #right-middle-cloud{
+    width: 13.75%;
+    height: 5.94%;
+
+    position: absolute;
+    top: 23%;
+    left: 73%;
+
+    z-index: 0;
+
+    animation: right-middle-cloud 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes right-middle-cloud {
+    from{ top: 22% }
+    to{ top: 24% }
+}
+
+
+.first-page #left-bottom-cloud{
+    width: 39.22%;
+    height: 18.13%;
+
+    position: absolute;
+
+    left:  0%;
+    top: 25%;
+    z-index: 4;
+
+    animation: left-bottom-cloud 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes left-bottom-cloud {
+    from{ top: 26% }
+    to{ top: 24% }
+}
+
+
+.first-page #start-press-button{
+    width: 19.06%;
+    height: 12.71%;
+
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+.first-page #left-cd{
+    width: 63%;
+    /* height: 380px; */
+    position: absolute;
+    top: 82%;
+    left: -17%;
+    z-index: 2;
+
+}
+
+.left-cd-move{
+    animation: left-cd 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes left-cd {
+
+    from{ transform:rotate(0deg) }
+    to{ transform:rotate(360deg) }
+
+}
+
+.first-page #space{
+    width: 25.63%;
+    height: 7.71%;
+
+    position: absolute;
+    top: 95%;
+    left: 38%;
+    z-index: 1;
+}
+
+.first-page #right-cd{
+    width: 60%;
+    /* height: 380px; */
+    position: absolute;
+    top: 82%;
+    left: 56%;
+    z-index: 2;
+
+}
+
+.right-cd-move{
+    animation: right-cd 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes right-cd {
+
+    from{ transform:rotate(360deg) }
+    to{ transform:rotate(0deg) }
+
+}
+
+/*******************************prize-page***************************************/
+
+.prize-page {
+    background-image: url("../img/prize-page/bg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.prize-page .prize-page-box{
+
+    width: 91.43%;
+    height: 85.28%;
+    margin: 0 auto;
+    margin-top: 10%;
+
+    position: relative;
+
+}
+
+.prize-page .prize-page-box .prize-page-left-cd{
+    position: absolute;
+    width: 50%;
+    /*height: 30%;*/
+    left: 0;
+
+    animation:  prize-page-left-cd 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes prize-page-left-cd{
+    from{ transform:rotate(0deg) }
+    to{ transform:rotate(360deg) }
+}
+
+.prize-page .prize-page-box .prize-page-right-cd{
+
+    position: absolute;
+    width: 50%;
+    /*height: 30%;*/
+
+    animation:  prize-page-right-cd 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes prize-page-right-cd{
+    from{ transform:rotate(360deg) }
+    to{ transform:rotate(0deg) }
+}
+
+.prize-page .prize-page-box .prize-page-showBoard{
+    position: absolute;
+    width: 73%;
+    height: 47.71%;
+    top: 15%;
+    left: 8%;
+}
+
+.prize-page .prize-page-box .prize-page-left-bottom{
+    position: absolute;
+    width: 69.32%;
+    height: 18.13%;
+
+    left: -13%;
+    top: 45%;
+
+    animation:  prize-page-left-bottom 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes prize-page-left-bottom{
+    from{ top: 47% }
+    to{ top: 40% }
+}
+
+.prize-page .prize-page-box .prize-page-right-top{
+    position: absolute;
+    width: 13.75%;
+    height: 5.937%;
+
+    left: 60%;
+    top: 65%;
+
+    animation:  prize-page-right-top 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes prize-page-right-top{
+    from{ top: 63% }
+    to{ top: 65% }
+}
+
+
+.prize-page .prize-page-box .prize-page-right-bottom{
+    position: absolute;
+    width: 11.25%;
+    height: 3.958%;
+
+    left: 75%;
+    top: 40%;
+
+    animation:  prize-page-right-bottom 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes prize-page-right-bottom{
+    from{ top: 37% }
+    to{ top: 41% }
+}
+
+.prize-page .prize-page-box .prize-page-tips-bottom{
+    position: absolute;
+    width: 40.475%;
+    height: 9.375%;
+
+    left: 30%;
+    top: 95%;
+    z-index: 2;
+}
+
+.prize-page .prize-page-box .prize-page-tips-top{
+    position: absolute;
+    width: 40.475%;
+    height: 9.375%;
+
+    left: 30%;
+    top: 80%;
+
+    z-index: 2;
+}
+
+.prize-page .prize-page-box .prize-page-shdow-top{
+    position: absolute;
+    width: 65.3125%;
+    height: 15%;
+    left: 18%;
+    top: 80%;
+    z-index: 1;
+}
+
+
+
+.prize-page .prize-page-box .prize-page-shdow-bottom{
+    position: absolute;
+    width: 65.3125%;
+    height: 15%;
+    left: 18%;
+    top: 95%;
+    z-index: 1;
+}
+
+
+
+/*******************************transform-fail-page***************************************/
+
+/*******************************rule-page***************************************/
+.rule-page{
+    background-image: url("../img/prize-page/bg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.rule-page .rule-page-background{
+    position: absolute;
+    width: 90.625%;
+    height: 93.542%;
+    left: 5%;
+    top: 3%;
+}
+
+/*******************************win-prize-page***************************************/
+.win-prize-page{
+    background-color: red;
+}
+
+.swiper-slide{
+
+    line-height: 300px;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+}
+/*!*********************left middle 三滴雨动画**********************************/
+
+
+.prize-page .prize-page-box .win-prize-page-left-bottom {
+    position: absolute;
+    width: 69.32%;
+    height: 35%;
+    background-repeat: no-repeat;
+    left: -13%;
+    top: 40%;
+    animation: win-prize-page-left-bottom 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes  win-prize-page-left-bottom{
+    0%{
+        top: 39%;
+        background-image: url("../img/win-prize-page/left-bottom/1.png");
+    }
+
+    50%{
+        top: 40%;
+        background-image: url("../img/win-prize-page/left-bottom/2.png");
+    }
+
+    100%{
+        top: 41%;
+        background-image: url("../img/win-prize-page/left-bottom/3.png");
+    }
+}
+
+.prize-page .prize-page-box .win-prize-page-right-middle{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-repeat: no-repeat;
+    left: 80%;
+    top: 25%;
+    animation: win-prize-page-right-middle 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes  win-prize-page-right-middle{
+    0%{
+        top: 26%;
+        background-image: url("../img/win-prize-page/right-middle/1.png");
+    }
+
+    50%{
+        top: 25%;
+        background-image: url("../img/win-prize-page/right-middle/2.png");
+    }
+
+    100%{
+        top:24%;
+        background-image: url("../img/win-prize-page/right-middle/3.png");
+    }
+}
+
+.prize-page .prize-page-box .win-prize-page-right-top{
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 20%;
+    left: 65%;
+    top: 43%;
+    animation: win-prize-page-right-top 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes win-prize-page-right-top {
+    0%{
+        top: 40%;
+        background-image: url("../img/win-prize-page/right-top/1.png");
+    }
+
+    50%{
+        top: 43%;
+        background-image: url("../img/win-prize-page/right-top/2.png");
+    }
+
+    100%{
+        top:46%;
+        background-image: url("../img/win-prize-page/right-top/3.png");
+    }
+}
+/*************************share page****************************************/
+    .share-page{
+        position: relative;
+        background-image: url("../img/first-page/first-page-bg.jpg");
+    }
+
+    .share-page .static{
+        width: 90%;
+        height: 70%;
+        position: absolute;
+        left: 8%;
+        top: 20%;
+        z-index: 2;
+    }
+
+    .share-page .left-top{
+        position: absolute;
+        width: 11.25%;
+        height: 3.96%;
+        top: 10%;
+
+        animation: left-top 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .share-page .left-middle{
+        position: absolute;
+        width: 39.219%;
+        height: 18.125%;
+        top: 40%;
+        left: 38%;
+        z-index: 2;
+
+        animation: left-middle 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .share-page .left-bottom{
+        position: absolute;
+        width: 7.9%;
+        height: 3%;
+        top: 55%;
+
+        animation: left-bottom 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .share-page .right-two{
+        position: absolute;
+        width: 28%;
+        height: 15%;
+        left: 70%;
+        top: 23%;
+        z-index: 3;
+
+        animation: right-two 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .share-page .right-bottom{
+        position: absolute;
+        width: 28%;
+        height: 15%;
+        left: 60%;
+        top: 70%;
+
+        animation: right-bottom 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .share-page .arrow{
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        top: 10%;
+
+        animation: arrow 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        z-index: 1;
+    }
+
+    @keyframes  arrow{
+        0%{
+            background-image: url("../img/share/1.png");
+        }
+        20%{
+            background-image: url("../img/share/2.png");
+        }
+        40%{
+            background-image: url("../img/share/3.png");
+        }
+        60%{
+            background-image: url("../img/share/4.png");
+        }
+        80%{
+            background-image: url("../img/share/5.png");
+        }
+        100%{
+            background-image: url("../img/share/6.png");
+        }
+    }
+
+    @keyframes left-top {
+        from{
+            top:9%;
+        }
+        to{
+            top:11%
+        }
+    }
+
+    @keyframes left-middle {
+        from{
+            top:39%;
+        }
+        to{
+            top:41%
+        }
+    }
+
+    @keyframes left-bottom {
+        from{
+            top:53%;
+        }
+        to{
+            top:57%
+        }
+    }
+
+    @keyframes right-two {
+        from{
+            top:23%;
+        }
+        to{
+            top:24%
+        }
+    }
+
+    @keyframes right-bottom {
+        from{
+            top:71%;
+        }
+        to{
+            top:69%
+        }
+    }

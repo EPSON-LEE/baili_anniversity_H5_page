@@ -1,0 +1,44 @@
+function loadDom(){
+var oTarget = document.getElementById("wrapper");
+
+var oDiv1 = createSomething("div",null,'swiper-slide','first-page',null,null,null);
+
+var img1_1 = createSomething("img","school-flower",null,null,null,null,"img/first-page/school-flower.png");
+var img1_2 = createSomething("img","static",null,null,null,null,"img/first-page/school-flower.png");
+var img1_3 = createSomething("img","left-cloud",null,null,null,null,"img/first-page/left-cloud.png");
+var img1_4 = createSomething("img","left-bottom-cloud",null,null,null,null,"img/first-page/left-bottom-cloud.png");
+var img1_5 = createSomething("img","right-middle-cloud",null,null,null,null,"img/first-page/right-middle-cloud.png");
+var img1_6 = createSomething("img","ad",null,null,null,null,"img/first-page/ad.png");
+var img1_7 = createSomething("img","start-press-button",null,null,null,null,"img/first-page/start-press-button.png");
+var img1_8 = createSomething("img","left-cd",null,null,null,null,"img/first-page/cd.png");
+var img1_9 = createSomething("img","space",null,null,null,null,"img/first-page/cd-space.png");
+var img1_10 = createSomething("img","right-cd",null,null,null,null,"img/first-page/cd.png");
+
+oDiv1.appendChild(img1_1);
+oDiv1.appendChild(img1_2);
+oDiv1.appendChild(img1_3);
+oDiv1.appendChild(img1_4);
+oDiv1.appendChild(img1_5);
+oDiv1.appendChild(img1_6);
+oDiv1.appendChild(img1_7);
+oDiv1.appendChild(img1_8);
+oDiv1.appendChild(img1_9);
+oDiv1.appendChild(img1_10);
+
+
+
+}
+
+function createSomething(type,id,class1,class2,class3,class4,src){
+var oType = document.createElement(type);
+
+if(arguments[1] == null){
+
+}else{
+oType.id = id;
+}
+
+oType.classList.add(class1,class2,class3,class4);
+oType.src = src;
+return oType;
+}

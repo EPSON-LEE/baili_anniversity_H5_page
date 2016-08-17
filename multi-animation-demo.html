@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style rel="stylesheet" type="text/css">
+        #div1 {
+            background-color: #000000;
+            width: auto;
+            height: 200px;
+            transition: all 2s;
+        }
+        #div1:hover {
+            margin-top: 100px;
+        }
+        #div2 {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            transition: all 3s;
+            float: left;
+            margin-left: -500px;
+        }
+        #div2:hover {
+            transform: translate(650%, 0);
+        }
+        #move:hover {
+            transform: translate(90%, 0);
+        }
+        #move {
+            width: 500px;
+            height: 200px;
+            transition: all 3s;
+            background-color: #333333;
+            float: left;
+        }
+        #div3 {
+            width: auto;
+            height: 200px;
+            background-color: green;
+            transition: all 3s;
+            clear: both;
+        }
+        #div5:hover {
+            transform: translate(0, 100px);
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="move"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="user" class="user" data-id="1234567890" data-user="johndoe" data-date-of-birth>John Doe</div>
+</body>
+<script>
+
+
+    var el = document.querySelector('#user');
+    var className = document.getElementsByClassName("user");
+    alert(className[0].dataset.id);
+
+
+    // el.id == 'user'
+    // el.dataset.id === '1234567890'
+    // el.dataset.user === 'johndoe'
+    // el.dataset.dateOfBirth === ''
+
+//    el.dataset.dateOfBirth = '1960-10-03'; // set the DOB.
+
+    // 'someDataAttr' in el.dataset === false
+
+//    el.dataset.someDataAttr = 'mydata';
+    // 'someDataAttr' in el.dataset === true
+
+//    console.log(el.dataset.user);
+
+</script>
+</html>
